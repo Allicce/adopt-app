@@ -1,3 +1,4 @@
+export const WHITE = "#fff";
 export const GREY_1 = "#F2F2F2";
 export const GREY_2 = "#E0E0E0";
 export const GREY_3 = "#BDBDBD";
@@ -13,4 +14,3 @@ export const BLUE_COLOR_DARK = "#25657A";
 
 export const ERROR_RED_COLOR = "#FF8F8F";
 export const RED_COLOR_DARK = "#EB5757";
-
