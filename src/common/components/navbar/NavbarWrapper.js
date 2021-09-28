@@ -3,18 +3,27 @@ import * as color from "../../../styles/abstracts/colourVariables";
 import { MEDIA_QUERIES } from "../../../styles/abstracts/mediaQueryVariable";
 
 export const NavbarWrapper = styled.nav`
+  height: inherit;
+
   .menu-items {
     width: 100%;
-    height: 3rem;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: ${color.PRIMARY_COLOR_DARK};
+    font-size: 1.3rem;
 
     a {
       color: ${color.WHITE};
       text-transform: uppercase;
       text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: ${color.PRIMARY_COLOR_LIGHT};
+      transform: scale(1.1);
     }
 
     a.navbar-active {
@@ -29,7 +38,7 @@ export const NavbarWrapper = styled.nav`
       justify-content: flex-start;
       align-items: flex-start;
       margin-top: 7rem;
-      font-size: 2rem;
+
       position: absolute;
       top: 0;
       left: 0;
@@ -41,6 +50,10 @@ export const NavbarWrapper = styled.nav`
         padding: 1rem 2rem;
         text-align: left;
       }
+    }
+
+    @media only screen and (max-width: ${MEDIA_QUERIES.tab_landscape}) {
+      font-size: 2rem;
     }
   }
 `;

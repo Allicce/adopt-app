@@ -1,13 +1,13 @@
 import "./App.css";
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { Navbar } from "./common/components/navbar/Navbar";
 import { WelcomePage } from "./pages/welcomePage/WelcomePage";
+import Header from "./modules/header/Header";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Header />
       <Switch>
         <Route exact path="/" render={() => <WelcomePage />} />
       </Switch>

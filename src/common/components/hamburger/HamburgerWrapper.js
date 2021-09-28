@@ -19,8 +19,7 @@ export const HamburgerWrapper = styled.div`
     width: 4rem;
     height: 0.37rem;
     border-radius: 10px;
-    //${color.WHITE}
-    background-color: black;
+    background-color: ${color.WHITE};
     transform-origin: 1px;
     transition: all 0.3s linear;
 
