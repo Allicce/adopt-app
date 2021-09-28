@@ -5,11 +5,22 @@ import { MEDIA_QUERIES } from "../../styles/abstracts/mediaQueryVariable";
 export const HeaderWrapper = styled.header`
   background-color: ${color.PRIMARY_COLOR_DARK};
   height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .left-side {
     margin-left: 2rem;
     width: 40%;
     height: inherit;
+  }
+
+  .right-side {
+    margin-right: 2rem;
+
+    & button:first-child {
+      margin-right: 1rem;
+    }
   }
 
   @media only screen and (max-width: ${MEDIA_QUERIES.tab_landscape}) {
