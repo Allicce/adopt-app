@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { NavbarWrapper } from "./NavbarWrapper";
+import Hamburger from "../hamburger/Hamburger";
 
 export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <NavbarWrapper>
-      <div className="left-side">
+    <NavbarWrapper isOpen={isOpen}>
+      <div className="menu-items">
         <NavLink exact activeClassName="navbar-active" to="/">
           Home
         </NavLink>
@@ -22,7 +24,9 @@ export const Navbar = () => {
           About us
         </NavLink>
       </div>
-      <div className="right-side"></div>
+      <div>
+        <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
+      </div>
     </NavbarWrapper>
   );
 };

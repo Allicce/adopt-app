@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { Navbar } from "./components/navbar/Navbar";
+import { Navbar } from "./common/components/navbar/Navbar";
 import { WelcomePage } from "./pages/welcomePage/WelcomePage";
 
 function App() {
