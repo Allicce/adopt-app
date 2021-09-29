@@ -9,7 +9,7 @@ export const FooterWrapper = styled.footer`
   grid-template-columns: 1fr repeat(4, 2fr) 1fr;
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(51, 51, 51, 0.96), rgba(51, 51, 51, 0.96)),
     url(${background});
   background-position: center;
   background-repeat: no-repeat;
