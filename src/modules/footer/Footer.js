@@ -2,6 +2,8 @@ import React from "react";
 import { FooterWrapper } from "./FooterWrapper";
 import FooterMenu from "../../common/components/footerMenu/FooterMenu";
 import OpeningHours from "../../common/components/openingHours/OpeningHours";
+import instagram from "../../assets/img/instagram.svg";
+import facebook from "../../assets/img/facebook.svg";
 
 const Footer = () => {
   return (
@@ -10,13 +12,19 @@ const Footer = () => {
         <h3>Important links</h3>
         <FooterMenu />
       </div>
-      <div className="adress">
+      <div className="address">
         <h3>Contacts</h3>
         <div>
           <h4>Cat and dog shelter</h4>
           <p>Main street 1534/85</p>
           <p>Brno</p>
           <p>600 00</p>
+          <p className="email">
+            Email: <span>info@catanddogshelter.com</span>
+          </p>
+          <p className="phone">
+            Phone number: <span>+420 123 456 789</span>
+          </p>
         </div>
       </div>
       <div className="account">
@@ -35,13 +43,20 @@ const Footer = () => {
         <OpeningHours />
       </div>
       <div className="small-footer">
-        <div>
-          <p>&copy;2021 Cat and dog shelter</p>
+        <div className="copyright">
           <p>
-            created by <span>Alzbeta Stetiarova</span>
+            &copy;2021 Cat and dog shelter | created by{" "}
+            <span>Alzbeta Stetiarova</span>
           </p>
         </div>
-        <div>instagram facebook</div>
+        <div className="social-media">
+          <div>
+            <img src={instagram} />
+          </div>
+          <div>
+            <img src={facebook} />
+          </div>
+        </div>
       </div>
     </FooterWrapper>
   );
