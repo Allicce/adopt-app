@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import * as color from "../../../../styles/abstracts/colourVariables";
+import { MEDIA_QUERIES } from "../../../../styles/abstracts/mediaQueryVariable";
 
 export const ButtonWrapper = styled.button`
-  padding: 0.7rem 2rem;
-  border-radius: 0.5rem;
+  padding: ${({ bigger }) => (bigger ? "1.3rem 2.5rem" : "0.7rem 2rem")};
+  border-radius: 0.3rem;
   border: none;
   outline: none;
   box-shadow: 8px 5px 7px 1px rgba(0, 0, 0, 0.36);
@@ -17,6 +18,16 @@ export const ButtonWrapper = styled.button`
       : color.PRIMARY_COLOR_DARKER};
   color: ${({ type }) => (type === "primary" ? color.GREY_6 : color.WHITE)};
   transition: all 0.3s ease-in-out;
+  font-size: ${({ bigger }) => (bigger ? "1.3rem" : "1rem")};
+
+  @media only screen and (max-width: ${MEDIA_QUERIES.medium_desktop}) {
+    font-size: ${({ bigger }) => (bigger ? "1.1rem" : "0.8rem")};
+    padding: ${({ bigger }) => (bigger ? "0.8rem 1.8rem" : "0.5rem 1.6rem")};
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERIES.tab_landscape}) {
+    font-size: ${({ bigger }) => (bigger ? "1.7rem" : "1.5rem")};
+  }
 
   &:hover,
   &:active {
