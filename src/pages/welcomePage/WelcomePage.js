@@ -3,6 +3,9 @@ import Footer from "../../modules/footer/Footer";
 import { LandingPageWrapper } from "./LandingPageWrapper";
 import logo from "../../assets/img/you (1).png";
 import RectangleButton from "../../common/components/buttons/rectangleButton/RectangleButton";
+import News from "../../modules/news/News";
+import AnimalList from "../../modules/animalList/AnimalList";
+import { MainWrapper } from "./MainWrapper";
 
 export const WelcomePage = () => {
   return (
@@ -19,6 +22,12 @@ export const WelcomePage = () => {
           </div>
         </div>
       </LandingPageWrapper>
+      <MainWrapper>
+        <News />
+        <div>
+          <AnimalList />
+        </div>
+      </MainWrapper>
       <Footer />
     </div>
   );
