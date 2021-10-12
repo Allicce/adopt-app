@@ -18,29 +18,63 @@ export const AnimalCardWrapper = styled.div`
   border-radius: 5px;
   box-shadow: 2px 3px 8px 4px rgba(0, 0, 0, 0.19);
   .animalCard-information {
+    color: ${color.WHITE};
+    padding: 1rem;
+
+    h3 {
+      margin: 0.2rem;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .animalCard-images {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     padding: 1rem;
     height: 100%;
 
     .mars,
-    .like {
+    .like,
+    .heart,
+    .femenine {
       width: 1.2rem;
       padding: 0.3rem;
 
       img {
         display: block;
         width: 100%;
+      }
+    }
+
+    .mars,
+    .like,
+    .femenine {
+      img {
         filter: invert(100%);
       }
     }
 
-    .mars {
+    .like,
+    .heart {
+      width: 1.5rem;
+    }
+
+    .mars,
+    .femenine {
       border-radius: 3px;
+      margin-right: 0.5rem;
+    }
+
+    .mars {
       background-color: ${color.PRIMARY_COLOR};
+    }
+
+    .femenine {
+      background-color: ${color.RED_COLOR_DARK};
     }
   }
 `;

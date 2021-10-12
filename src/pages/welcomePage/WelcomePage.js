@@ -24,7 +24,7 @@ export const WelcomePage = () => {
       </LandingPageWrapper>
       <MainWrapper>
         <News />
-        <div>
+        <div className="content-wrapper">
           <AnimalList />
         </div>
       </MainWrapper>
