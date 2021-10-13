@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import * as color from "../../../styles/abstracts/colourVariables";
+import { MEDIA_QUERIES } from "../../../styles/abstracts/mediaQueryVariable";
 
 export const AnimalCardWrapper = styled.div`
   width: 100%;
@@ -23,11 +24,21 @@ export const AnimalCardWrapper = styled.div`
 
     h3 {
       margin: 0.2rem;
+      font-size: 2rem;
+
+      @media only screen and (min-width: ${MEDIA_QUERIES.tab_landscape}) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
       margin: 0;
       padding: 0;
+      font-size: 1.4rem;
+
+      @media only screen and (min-width: ${MEDIA_QUERIES.tab_landscape}) {
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -41,8 +52,13 @@ export const AnimalCardWrapper = styled.div`
     .like,
     .heart,
     .femenine {
-      width: 1.2rem;
-      padding: 0.3rem;
+      width: 1.8rem;
+      padding: 0.5rem;
+
+      @media only screen and (min-width: ${MEDIA_QUERIES.tab_landscape}) {
+        width: 1.5rem;
+        padding: 0.3rem;
+      }
 
       img {
         display: block;
@@ -60,13 +76,21 @@ export const AnimalCardWrapper = styled.div`
 
     .like,
     .heart {
-      width: 1.5rem;
+      width: 2rem;
+
+      @media only screen and (min-width: ${MEDIA_QUERIES.tab_landscape}) {
+        width: 1.7rem;
+      }
     }
 
     .mars,
     .femenine {
       border-radius: 3px;
-      margin-right: 0.5rem;
+      margin-right: 1rem;
+
+      @media only screen and (min-width: ${MEDIA_QUERIES.tab_landscape}) {
+        margin-right: 0.5rem;
+      }
     }
 
     .mars {

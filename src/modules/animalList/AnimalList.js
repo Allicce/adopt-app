@@ -7,7 +7,7 @@ const AnimalList = () => {
   console.log(animalInShelter);
   return (
     <AnimalListWrapper>
-      <h2>Animal list</h2>
+      <h2 className="animal-list-title">Animal list</h2>
       <div className="content-wrapper">
         {animalInShelter.dogs.map((animal, index) => (
           <AnimalCard animal={animal} key={animal.name + index} />
