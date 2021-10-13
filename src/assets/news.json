@@ -1,0 +1,16 @@
+{
+  "news": [
+    {
+      "date": 1634138722,
+      "header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "text": "Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Ultricies mi quis hendrerit dolor. Tortor posuere ac ut consequat semper viverra. Pharetra magna ac placerat vestibulum lectus. Ullamcorper sit amet risus nullam eget felis eget nunc. Nam aliquam sem et tortor consequat id. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Arcu dui vivamus arcu felis bibendum ut. Faucibus vitae aliquet nec ullamcorper sit amet risus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Eros donec ac odio tempor orci dapibus. Malesuada pellentesque elit eget gravida. Aenean euismod elementum nisi quis. Vulputate sapien nec sagittis aliquam malesuada bibendum. Tincidunt vitae semper quis lectus.",
+      "img": "default"
+    },
+    {
+      "date": 1634138722,
+      "header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "text": "Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Ultricies mi quis hendrerit dolor. Tortor posuere ac ut consequat semper viverra. Pharetra magna ac placerat vestibulum lectus. Ullamcorper sit amet risus nullam eget felis eget nunc. Nam aliquam sem et tortor consequat id. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Arcu dui vivamus arcu felis bibendum ut. Faucibus vitae aliquet nec ullamcorper sit amet risus. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Eros donec ac odio tempor orci dapibus. Malesuada pellentesque elit eget gravida. Aenean euismod elementum nisi quis. Vulputate sapien nec sagittis aliquam malesuada bibendum. Tincidunt vitae semper quis lectus. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Donec pretium vulputate sapien nec sagittis. Mattis aliquam faucibus purus in massa tempor nec. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Est ultricies integer quis auctor elit sed vulputate. Amet nisl suscipit adipiscing bibendum est ultricies. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Ut consequat semper",
+      "img": "news"
+    }
+  ]
+}

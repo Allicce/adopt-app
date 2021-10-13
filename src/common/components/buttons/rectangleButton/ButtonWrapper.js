@@ -3,7 +3,8 @@ import * as color from "../../../../styles/abstracts/colourVariables";
 import { MEDIA_QUERIES } from "../../../../styles/abstracts/mediaQueryVariable";
 
 export const ButtonWrapper = styled.button`
-  padding: ${({ bigger }) => (bigger ? "1.3rem 2.5rem" : "0.7rem 2rem")};
+  padding: ${({ bigger, smaller }) =>
+    bigger ? "1.3rem 2.5rem" : smaller ? "0.5rem 1rem" : "0.7rem 2rem"};
   border-radius: 0.3rem;
   border: none;
   outline: none;
@@ -18,7 +19,10 @@ export const ButtonWrapper = styled.button`
       : color.PRIMARY_COLOR_DARKER};
   color: ${({ type }) => (type === "primary" ? color.GREY_6 : color.WHITE)};
   transition: all 0.3s ease-in-out;
-  font-size: ${({ bigger }) => (bigger ? "1.3rem" : "1rem")};
+  font-size: ${({ bigger, smaller }) =>
+    bigger ? "1.3rem" : smaller ? "0.7rem" : "1rem"};
+
+  ${({ smaller }) => smaller && "letter-spacing: 0.3rem"};
 
   @media only screen and (max-width: ${MEDIA_QUERIES.medium_desktop}) {
     font-size: ${({ bigger }) => (bigger ? "1.1rem" : "0.8rem")};
