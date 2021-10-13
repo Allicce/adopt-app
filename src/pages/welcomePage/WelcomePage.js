@@ -5,6 +5,7 @@ import logo from "../../assets/img/you (1).png";
 import RectangleButton from "../../common/components/buttons/rectangleButton/RectangleButton";
 import News from "../../modules/news/News";
 import AnimalList from "../../modules/animalList/AnimalList";
+import animalInShelter from "../../assets/animalInShelter.json";
 import { MainWrapper } from "./MainWrapper";
 
 export const WelcomePage = () => {
@@ -25,7 +26,13 @@ export const WelcomePage = () => {
       <MainWrapper>
         <News />
         <div className="content-wrapper">
-          <AnimalList />
+          {Object.keys(animalInShelter).map((key) => (
+            <AnimalList
+              groupOfAnimal={animalInShelter[key]}
+              key={key}
+              name={key}
+            />
+          ))}
         </div>
       </MainWrapper>
       <Footer />
