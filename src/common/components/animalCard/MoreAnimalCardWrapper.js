@@ -10,6 +10,7 @@ export const MoreAnimalCardWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   .next-wrapper {
     display: flex;

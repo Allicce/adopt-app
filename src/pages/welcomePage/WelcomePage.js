@@ -6,6 +6,7 @@ import RectangleButton from "../../common/components/buttons/rectangleButton/Rec
 import News from "../../modules/news/News";
 import AnimalList from "../../modules/animalList/AnimalList";
 import { MainWrapper } from "./MainWrapper";
+import { HelpUs } from "../../modules/helpUs/HelpUs";
 
 export const WelcomePage = ({ animalInShelter }) => {
   return (
@@ -35,6 +36,7 @@ export const WelcomePage = ({ animalInShelter }) => {
           ))}
         </div>
       </MainWrapper>
+      <HelpUs />
       <Footer />
     </div>
   );

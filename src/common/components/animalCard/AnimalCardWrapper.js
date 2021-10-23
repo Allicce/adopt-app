@@ -18,6 +18,8 @@ export const AnimalCardWrapper = styled.div`
   align-items: flex-end;
   border-radius: 5px;
   box-shadow: 2px 3px 8px 4px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+
   .animalCard-information {
     color: ${color.WHITE};
     padding: 1rem;

@@ -11,7 +11,7 @@ const AnimalList = ({ groupOfAnimal, name }) => {
         {groupOfAnimal.slice(0, 9).map((animal, index) => (
           <AnimalCard animal={animal} key={animal.name + index} id={name} />
         ))}
-        <MoreAnimalCard name={name} />
+        {groupOfAnimal.length > 9 && <MoreAnimalCard name={name} />}
       </div>
     </AnimalListWrapper>
   );

@@ -4,6 +4,7 @@ import * as color from "../../styles/abstracts/colourVariables";
 import { MEDIA_QUERIES } from "../../styles/abstracts/mediaQueryVariable";
 
 export const LandingPageWrapper = styled.div`
+  width: 100%;
   height: 80vh;
   background: linear-gradient(
       45deg,
@@ -50,7 +51,7 @@ export const LandingPageWrapper = styled.div`
       font-size: 1.8rem;
       color: ${color.WHITE};
       width: 80%;
-      margin-left: 0;
+      margin-left: 15rem;
 
       @media only screen and (max-width: ${MEDIA_QUERIES.medium_desktop}) {
         font-size: 1.3rem;
@@ -63,8 +64,7 @@ export const LandingPageWrapper = styled.div`
     }
 
     .cta {
-      margin: 4rem 0 0 -20rem;
-
+      margin: 4rem 0 0 15rem;
       @media only screen and (max-width: ${MEDIA_QUERIES.medium_desktop}) {
         margin: 4rem 0 0 -12rem;
       }
