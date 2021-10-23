@@ -62,6 +62,48 @@
       "gender": "male",
       "liked": false,
       "img": "dog3"
+    },
+    {
+      "name": "Shelby",
+      "age": "3 months",
+      "gender": "male",
+      "liked": true,
+      "img": "dog1"
+    },
+    {
+      "name": "Mary",
+      "age": "6 years",
+      "gender": "female",
+      "liked": false,
+      "img": "dog2"
+    },
+    {
+      "name": "Sheldon",
+      "age": "6 months",
+      "gender": "male",
+      "liked": false,
+      "img": "dog3"
+    },
+    {
+      "name": "Shelby",
+      "age": "3 months",
+      "gender": "male",
+      "liked": true,
+      "img": "dog1"
+    },
+    {
+      "name": "Mary",
+      "age": "6 years",
+      "gender": "female",
+      "liked": false,
+      "img": "dog2"
+    },
+    {
+      "name": "Sheldon",
+      "age": "6 months",
+      "gender": "male",
+      "liked": false,
+      "img": "dog3"
     }
   ],
   "cats": [

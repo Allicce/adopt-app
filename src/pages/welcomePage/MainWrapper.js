@@ -13,4 +13,10 @@ export const MainWrapper = styled.div`
   .content-wrapper {
     flex: 70% 0 0;
   }
+
+  h2 {
+    text-align: left;
+    font-size: 2.2rem;
+    margin-left: 10%;
+  }
 `;

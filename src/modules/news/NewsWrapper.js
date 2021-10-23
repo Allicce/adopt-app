@@ -17,5 +17,7 @@ export const NewsWrapper = styled.div`
 
   h3 {
     margin: 0;
+    padding: 3rem;
+    text-align: left;
   }
 `;
