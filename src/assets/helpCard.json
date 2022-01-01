@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Food",
+    "imageUrl": "food",
+    "description": "Diam phasellus vestibulum lorem sed risus ultricies. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer. Mattis vulputate enim nulla aliquet porttitor. Arcu bibendum at varius vel pharetra vel.",
+    "buttons": [
+      {
+        "name" : "shop 1",
+        "redirect": "/52/52"
+      },
+      {
+        "name" : "shop 2",
+        "redirect": "/52/53"
+      }
+    ]
+  },
+  {
+    "title": "Volunteering",
+    "imageUrl": "volunteering",
+    "description": "Diam phasellus vestibulum lorem sed risus ultricies. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer. Mattis vulputate enim nulla aliquet porttitor. Arcu bibendum at varius vel pharetra vel.",
+    "buttons": [
+      {
+        "name" : "Want to be volunteer",
+        "redirect": "/volunteering"
+      }
+    ]
+  }
+]
+

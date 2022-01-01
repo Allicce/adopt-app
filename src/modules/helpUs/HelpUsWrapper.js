@@ -21,9 +21,11 @@ export const HelpUsWrapper = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
 
     .left-side {
-      flex: 0 0 60%;
+      flex: 0 0 80%;
 
       p {
         font-size: 1.5rem;
@@ -49,19 +51,45 @@ export const HelpUsWrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto 10rem auto;
 
-    .right-side {
+    .left-side {
       font-size: 1.5rem;
       flex: 0 0 50%;
+      order: -1;
 
       .account {
-        display: inline-block;
+        display: block;
+        width: 40rem;
         padding: 1.5rem 3rem;
         font-size: 1.8rem;
         background-color: ${color.PRIMARY_COLOR};
         border-radius: 3px;
         color: ${color.WHITE};
       }
+
+      h4 {
+        font-size: 1.9rem;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .other-way-to-help {
+    margin-bottom: 5rem;
+    h3 {
+      color: ${color.PRIMARY_COLOR_DARK};
+      font-size: 2.8rem;
+      width: 60%;
+      margin: 0 auto 4rem auto;
+    }
+
+    .help-card-container {
+      width: 60%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 `;
