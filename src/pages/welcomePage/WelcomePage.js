@@ -7,6 +7,7 @@ import News from "../../modules/news/News";
 import AnimalList from "../../modules/animalList/AnimalList";
 import { MainWrapper } from "./MainWrapper";
 import { HelpUs } from "../../modules/helpUs/HelpUs";
+import AboutUs from "../../modules/aboutUs/AboutUs";
 
 export const WelcomePage = ({ animalInShelter }) => {
   return (
@@ -37,6 +38,7 @@ export const WelcomePage = ({ animalInShelter }) => {
         </div>
       </MainWrapper>
       <HelpUs />
+      <AboutUs />
       <Footer />
     </div>
   );
