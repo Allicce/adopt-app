@@ -1,9 +1,14 @@
 import React from "react";
 import ButtonWrapper from "./ButtonWrapper";
 
-const RectangleButton = ({ type, children, bigger, smaller }) => {
+const RectangleButton = ({ type, children, bigger, smaller, handleClick }) => {
   return (
-    <ButtonWrapper type={type} bigger={bigger} smaller={smaller}>
+    <ButtonWrapper
+      type={type}
+      bigger={bigger}
+      smaller={smaller}
+      onClick={handleClick}
+    >
       {children}
     </ButtonWrapper>
   );

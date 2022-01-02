@@ -3,8 +3,9 @@ import { HeaderWrapper } from "./HeaderWrapper";
 import { Navbar } from "../../common/components/navbar/Navbar";
 import RectangleButton from "../../common/components/buttons/rectangleButton/RectangleButton";
 import { RED_COLOR_DARK } from "../../styles/abstracts/colourVariables";
+import { withRouter } from "react-router";
 
-const Header = () => {
+const Header = ({ history }) => {
   return (
     <HeaderWrapper>
       <div className="left-side">
@@ -12,9 +13,11 @@ const Header = () => {
       </div>
       <div className="right-side">
         <RectangleButton type="red">Sign up</RectangleButton>
-        <RectangleButton>Sign in</RectangleButton>
+        <RectangleButton handleClick={() => history.push("/signin")}>
+          Sign in
+        </RectangleButton>
       </div>
     </HeaderWrapper>
   );
 };
-export default Header;
+export default withRouter(Header);
