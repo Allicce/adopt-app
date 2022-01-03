@@ -12,7 +12,9 @@ const Header = ({ history }) => {
         <Navbar />
       </div>
       <div className="right-side">
-        <RectangleButton type="red">Sign up</RectangleButton>
+        <RectangleButton type="red" handleClick={() => history.push("/signup")}>
+          Sign up
+        </RectangleButton>
         <RectangleButton handleClick={() => history.push("/signin")}>
           Sign in
         </RectangleButton>

@@ -6,6 +6,7 @@ import Header from "./modules/header/Header";
 import AllTypeOfAnimalPage from "./pages/allTypeOfAnimalPage/AllTypeOfAnimalPage";
 import animalInShelter from "../src/assets/animalInShelter.json";
 import SignInPage from "./pages/signInPage/SignInPage";
+import SignUpPage from "./pages/signUpPage/SignUpPage";
 
 function App() {
   return (
@@ -20,6 +21,12 @@ function App() {
           )}
         />
         <Route exact path="/signin" component={SignInPage} />
+        <Route exact path="/signup" component={SignUpPage} />
+        <Route
+          exact
+          path="/signup/additionalInformation"
+          component={SignUpPage}
+        />
         <Route
           exact
           path="/:animalsId"

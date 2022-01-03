@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import * as color from "../../styles/abstracts/colourVariables";
 
-const SignInPageWrapper = styled.div`
+const SignInSignUpPageWrapper = styled.div`
   background: linear-gradient(
     to bottom right,
     #e5f8ff 40%,
@@ -48,11 +48,25 @@ const SignInPageWrapper = styled.div`
   }
 
   .button-container {
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
     justify-content: space-between;
+    gap: 1rem;
 
     margin: 5rem 0;
   }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .redirect {
+    color: ${color.PRIMARY_COLOR_DARK};
+    cursor: pointer;
+  }
 `;
 
-export default SignInPageWrapper;
+export default SignInSignUpPageWrapper;
