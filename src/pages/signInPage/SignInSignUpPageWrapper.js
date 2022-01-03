@@ -67,6 +67,37 @@ const SignInSignUpPageWrapper = styled.div`
     color: ${color.PRIMARY_COLOR_DARK};
     cursor: pointer;
   }
+
+  .avatar {
+    width: 80%;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    span {
+      position: absolute;
+      bottom: 2rem;
+      right: -1rem;
+      width: 40%;
+      padding: 0.2rem 0.4rem;
+      display: flex;
+      align-items: center;
+      font-size: 1.7rem;
+      border: 1px solid ${color.GREY_6};
+      border-radius: 5px;
+      background-color: ${color.WHITE};
+      img {
+        width: 25%;
+        margin-right: 0.7rem;
+      }
+    }
+  }
+
+  .row-right-side {
+    padding-top: 6rem;
+  }
 `;
 
 export default SignInSignUpPageWrapper;

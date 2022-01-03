@@ -7,6 +7,7 @@ import AllTypeOfAnimalPage from "./pages/allTypeOfAnimalPage/AllTypeOfAnimalPage
 import animalInShelter from "../src/assets/animalInShelter.json";
 import SignInPage from "./pages/signInPage/SignInPage";
 import SignUpPage from "./pages/signUpPage/SignUpPage";
+import SignUpAdditionalInformationPage from "./pages/signUpPage/signUpAdditionalInformationPage";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <Route
           exact
           path="/signup/additionalInformation"
-          component={SignUpPage}
+          component={SignUpAdditionalInformationPage}
         />
         <Route
           exact

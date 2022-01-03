@@ -8,12 +8,16 @@ import signUp from "../../assets/img/signup.png";
 import { withRouter } from "react-router";
 
 const SignUpPage = ({ history }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    history.push("/signup/additionalInformation");
+  };
   return (
     <SignInSignUpPageWrapper>
       <div className="container">
         <div className="left-side">
           <h2>Sign up</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="form-row">
               <InputForm type="text" label="Name" />
               <InputForm type="text" label="Surname" />
