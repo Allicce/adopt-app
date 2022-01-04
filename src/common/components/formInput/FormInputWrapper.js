@@ -24,6 +24,11 @@ const FormInputWrapper = styled.div`
     border: 1px solid ${color.GREY_6};
     outline: none;
   }
+
+  input::placeholder {
+    color: ${color.GREY_3};
+    font-size: 1.3rem;
+  }
 `;
 
 export default FormInputWrapper;

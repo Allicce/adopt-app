@@ -6,7 +6,8 @@ import signUp2 from "../../assets/img/signup2.png";
 import avatar from "../../assets/img/avatars/6.png";
 import edit from "../../assets/img/edit_black_24dp.svg";
 
-const SignUpAdditionalInformationPage = () => {
+const SignUpAdditionalInformationPage = (props) => {
+  console.log("page 2: ", props);
   return (
     <SignInSignUpPageWrapper>
       <div className="container">
@@ -24,6 +25,8 @@ const SignUpAdditionalInformationPage = () => {
               <div className="row-right-side">
                 {/*change to select box*/}
                 <InputForm type="text" label="Title" />
+                <InputForm type="text" label="Name" />
+                <InputForm type="text" label="Surname" />
                 <InputForm type="phone" label="Phone" />
               </div>
             </div>

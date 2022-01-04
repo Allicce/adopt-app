@@ -41,4 +41,14 @@ export const HeaderWrapper = styled.header`
       width: 55%;
     }
   }
+
+  .user-interaction-container {
+    .avatar-container {
+      width: 3rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 `;

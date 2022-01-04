@@ -17,7 +17,7 @@ const FacebookButton = ({ children }) => {
   return (
     <FacebookButtonWrapper
       onMouseOver={handleOnMouseOver}
-      onMouseDown={handleOnMouseDown}
+      onMouseOut={handleOnMouseDown}
     >
       <div className="facebook-wrapper">
         {isFocused ? (

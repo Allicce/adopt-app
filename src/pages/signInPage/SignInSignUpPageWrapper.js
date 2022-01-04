@@ -95,9 +95,9 @@ const SignInSignUpPageWrapper = styled.div`
     }
   }
 
-  .row-right-side {
-    padding-top: 6rem;
-  }
+  //.row-right-side {
+  //  padding-top: 6rem;
+  //}
 `;
 
 export default SignInSignUpPageWrapper;
