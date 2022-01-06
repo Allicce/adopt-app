@@ -5,6 +5,7 @@ import RectangleButton from "../../common/components/buttons/rectangleButton/Rec
 import signUp2 from "../../assets/img/signup2.png";
 import avatar from "../../assets/img/avatars/6.png";
 import edit from "../../assets/img/edit_black_24dp.svg";
+import AddAvatar from "../../modules/addAvatar/AddAvatar";
 
 const SignUpAdditionalInformationPage = (props) => {
   console.log("page 2: ", props);
@@ -17,7 +18,7 @@ const SignUpAdditionalInformationPage = (props) => {
             <div className="form-row">
               <div className="avatar">
                 <img src={avatar} />
-                <span>
+                <span className="edit-avatar">
                   <img src={edit} />
                   Edit
                 </span>
@@ -49,6 +50,7 @@ const SignUpAdditionalInformationPage = (props) => {
           <img src={signUp2} alt="image" />
         </div>
       </div>
+      <AddAvatar isOpen />
     </SignInSignUpPageWrapper>
   );
 };

@@ -76,7 +76,7 @@ const SignInSignUpPageWrapper = styled.div`
       width: 100%;
     }
 
-    span {
+    .edit-avatar {
       position: absolute;
       bottom: 2rem;
       right: -1rem;
