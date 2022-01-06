@@ -5,6 +5,7 @@ import RectangleButton from "../../common/components/buttons/rectangleButton/Rec
 import { RED_COLOR_DARK } from "../../styles/abstracts/colourVariables";
 import { withRouter } from "react-router";
 import avatar from "../../assets/img/avatars/6.png";
+import UserAccount from "../../common/components/userAccount/UserAccount";
 
 const Header = ({ history, currentUser }) => {
   console.log("currentUser: ", currentUser);
@@ -16,9 +17,7 @@ const Header = ({ history, currentUser }) => {
       <div className="right-side">
         {currentUser ? (
           <div className="user-interaction-container">
-            <div className="avatar-container">
-              <img src={avatar} />
-            </div>
+            <UserAccount />
           </div>
         ) : (
           <div>
