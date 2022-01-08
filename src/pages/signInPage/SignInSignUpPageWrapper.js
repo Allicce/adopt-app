@@ -71,6 +71,7 @@ const SignInSignUpPageWrapper = styled.div`
   .avatar {
     width: 80%;
     position: relative;
+    cursor: pointer;
 
     img {
       width: 100%;

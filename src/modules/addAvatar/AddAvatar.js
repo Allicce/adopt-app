@@ -46,11 +46,12 @@ const AVATARS = [
   avatar20,
 ];
 
-const AddAvatar = ({ isOpen }) => {
-  const [isHovered, setHovered] = useState(false);
+const AddAvatar = ({ isOpen, closeAvatarPage }) => {
   return (
     <AddAvatarWrapper isOpen={isOpen}>
-      <div className="close-button">&#10005;</div>
+      <div className="close-button" onClick={closeAvatarPage}>
+        &#10005;
+      </div>
       <div className="content-container">
         <h3>Choose your avatar</h3>
         <div className="avatars-container">

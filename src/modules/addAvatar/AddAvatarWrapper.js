@@ -61,7 +61,7 @@ const AddAvatarWrapper = styled.div`
         width: 1px;
         height: 1px;
         border-radius: 50%;
-        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+        background: transparent;
         transition: all 0.2s ease-out;
       }
 
@@ -74,6 +74,7 @@ const AddAvatarWrapper = styled.div`
         }
 
         .avatar-background {
+          background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
           width: 100%;
           height: 100%;
         }
@@ -121,6 +122,7 @@ const AddAvatarWrapper = styled.div`
     padding: 1rem 1.3rem;
     background-color: ${color.GREY_4};
     border-radius: 50%;
+    cursor: pointer;
   }
 `;
 
