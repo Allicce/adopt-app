@@ -6,6 +6,9 @@ import { RED_COLOR_DARK } from "../../styles/abstracts/colourVariables";
 import { withRouter } from "react-router";
 import avatar from "../../assets/img/avatars/6.png";
 import UserAccount from "../../common/components/userAccount/UserAccount";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCurrentUser } from "../../redux/user/user.selectors";
 
 const Header = ({ history, currentUser }) => {
   console.log("currentUser: ", currentUser);
@@ -29,11 +32,15 @@ const Header = ({ history, currentUser }) => {
             </RectangleButton>
             <RectangleButton handleClick={() => history.push("/signin")}>
               Sign in
-            </RectangleButton>{" "}
+            </RectangleButton>
           </div>
         )}
       </div>
     </HeaderWrapper>
   );
 };
-export default withRouter(Header);
+
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
+export default withRouter(connect(mapStateToProps)(Header));

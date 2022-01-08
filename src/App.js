@@ -10,32 +10,28 @@ import SignUpPage from "./pages/signUpPage/SignUpPage";
 import SignUpAdditionalInformationPage from "./pages/signUpPage/signUpAdditionalInformationPage";
 import { auth, createUserProfileDocument, db } from "./firebase/firebase.utils";
 import { doc, onSnapshot } from "firebase/firestore";
-import Redirect from "react-router-dom/es/Redirect";
+import { Redirect } from "react-router-dom";
+import { createStructuredSelector } from "reselect";
+import { setCurrentUser } from "./redux/user/user.actions";
+import { connect } from "react-redux";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentUser: null,
-    };
-  }
   unsubscribeFromAuth = null;
 
   componentDidMount() {
+    const { setCurrentUser } = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
 
         const unsub = onSnapshot(doc(db, "users", userRef.id), (doc) => {
-          this.setState({
-            currentUser: {
-              id: userRef.id,
-              ...doc.data(),
-            },
+          setCurrentUser({
+            id: userRef.id,
+            ...doc.data(),
           });
         });
       }
-      this.setState({ currentUser: userAuth });
+      setCurrentUser(userAuth);
     });
   }
 
@@ -44,9 +40,10 @@ class App extends Component {
   }
 
   render() {
+    const { currentUser } = this.props;
     return (
       <div className="App">
-        <Header currentUser={this.state.currentUser} />
+        <Header />
         <Switch>
           <Route
             exact
@@ -58,16 +55,12 @@ class App extends Component {
           <Route
             exact
             path="/signin"
-            render={() =>
-              this.state.currentUser ? <Redirect to="/" /> : <SignInPage />
-            }
+            render={() => (currentUser ? <Redirect to="/" /> : <SignInPage />)}
           />
           <Route
             exact
             path="/signup"
-            render={() =>
-              this.state.currentUser ? <Redirect to="/" /> : <SignUpPage />
-            }
+            render={() => (currentUser ? <Redirect to="/" /> : <SignUpPage />)}
           />
 
           <Route
@@ -93,4 +86,12 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = createStructuredSelector({
+  currentUser: setCurrentUser,
+});
+
+const maDispatchToProps = (dispatch) => ({
+  setCurrentUser: (user) => dispatch(setCurrentUser(user)),
+});
+
+export default connect(mapStateToProps, maDispatchToProps)(App);
